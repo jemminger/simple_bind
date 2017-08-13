@@ -1,6 +1,7 @@
 # Simple Bind
 
 [![Build Status](https://travis-ci.org/simple-bind/simple_bind.svg?branch=master)](https://travis-ci.org/simple-bind/simple_bind)
+[![Gem Version](https://badge.fury.io/rb/simple_bind.svg)](https://badge.fury.io/rb/simple_bind)
 
 *NOTE*: This gem has just begun development. Many changes are going to be made often and can be breaking.
 
