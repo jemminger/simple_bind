@@ -52,3 +52,4 @@
 /spec/dummy/.env
 /spec/dummy/.powenv
 /spec/dummy/*~
+simple_bind-*.gem
