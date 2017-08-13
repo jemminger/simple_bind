@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/simple-bind/simple_bind.svg?branch=master)](https://travis-ci.org/simple-bind/simple_bind)
 
+*NOTE*: This gem has just begun development. Many changes are going to be made often and can be breaking.
 
 Simple Bind's goal is to give a realtime feel to your Ruby on Rails application without the added weight of a Javascript framework while being as unobtrusive as possible.
 
