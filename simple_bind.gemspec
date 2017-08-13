@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'jquery-rails', '>= 3.1.0'
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency 'rails', '~> 5.1.0'
+  spec.add_development_dependency 'rails', '~> 4.2.0'
   spec.add_development_dependency 'rspec-rails', '~> 3.0'
   spec.add_development_dependency 'capybara', '~> 2.6'
   spec.add_development_dependency 'poltergeist', '~> 1.16.0'

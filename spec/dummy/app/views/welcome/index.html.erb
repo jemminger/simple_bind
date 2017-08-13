@@ -1,6 +1,5 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
-<%= form_with scope: :post do |f| %>
-  <%= f.text_field :name, value: 'Test', data: { bind: f.object_id } %>
-  <%= content_tag :span, 'Test', bind: f.object_id, id: 'spantag' %>
-<% end %>
+<% id = Time.now.to_i %>
+<%= text_field_tag :name, 'Test', data: { bind: id } %>
+<%= content_tag :span, 'Test', bind: id, id: 'spantag' %>
