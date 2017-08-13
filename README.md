@@ -47,7 +47,7 @@ For the binder, we create a data attribute called `data-bind` and set it to some
 
 For the listener, we create an attribute called `bind` and have it set to the same ID as the Binder.
 
-    <%= content_tag :span, @template.name, bind: @template.object_id %>
+    <%= content_tag :span, @object.name, bind: @object.object_id %>
 
 #### Result
 
