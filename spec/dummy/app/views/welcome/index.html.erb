@@ -1,0 +1,9 @@
+<h1>Text input</h1>
+<% id = "TEXT#{Time.now.to_i}" %>
+<p><%= text_field_tag :name, 'Test', data: { bind: id } %></p>
+<p><%= content_tag :span, 'Test', bind: id, id: 'span_text_tag' %></p>
+
+<h1>Select input</h1>
+<% id_select = "SELECT#{Time.now.to_i}" %>
+<p><%= select_tag :select, options_for_select([['First Option', :first_option], ['Second Option', :second_option]]), id: 'select_input', data: { bind: id_select } %></p>
+<p><%= content_tag :span, 'First Option', bind: id_select, id: 'span_select_tag' %></p
