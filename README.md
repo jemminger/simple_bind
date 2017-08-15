@@ -65,7 +65,20 @@ For the listener, we create an attribute called `bind` and have it set to the sa
 
     <%= content_tag :span, 'First Option', bind: id, id: 'span_select_tag' %>
 
+
 ![Simple Bind Input Select Field Result](https://github.com/simple-bind/simple_bind/raw/master/images/input_select_field_result.gif)
+
+## Check Box
+
+For the binder, we create a data attribute called `data-bind` and set it to some ID. This should be a unique value so it does not conflict with other data binds on the current view.
+
+    <%= check_box_tag :checkbox, 'yes', false, id: 'check_box_input', data: { bind: id_check } %> Input Check Box
+
+For the listener, we create an attribute called `bind` and have it set to the same ID as the Binder.
+
+    <%= check_box_tag :checkbox, 'yes', false, id: 'span_check_box_tag', bind: id_check %> Displayed Check Box
+
+![Simple Bind Input Check Box Field Result](https://github.com/simple-bind/simple_bind/raw/master/images/input_check_box_result.gif)  
 
 # Contributing
 

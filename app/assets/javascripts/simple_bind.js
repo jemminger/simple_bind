@@ -13,7 +13,9 @@ this.simpleBind = function() {
     var id = $(this).data('bind');
     if (id){ 
       if($(this).is(":checked")) {
-        $("[bind='" + id + "']").html($(this).val());
+        $("[bind='" + id + "']").prop('checked', true);
+      } else {
+        $("[bind='" + id + "']").prop('checked', false);
       }
     }
   });

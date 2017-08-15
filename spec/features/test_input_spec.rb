@@ -17,8 +17,7 @@ feature 'Test functionality' do
   it 'Change checkbox', js: true do
     visit '/'
     find('#check_box_input').click
-    expect(find('#span_check_box_tag')).to have_content 'yes'
+    expect(find('#span_check_box_tag')).to be_checked
   end
-
 
 end
