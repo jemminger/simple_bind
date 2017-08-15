@@ -1,12 +1,21 @@
 this.simpleBind = function() {
   $('input:text').keyup(function() {
     var id = $(this).data('bind');
-    $("[bind='" + id + "']").html($(this).val());
+    if (id){ $("[bind='" + id + "']").html($(this).val()) }
   });
 
   $('select').change(function() {
     var id = $(this).data('bind');
-    $("[bind='" + id + "']").html($(this).find("option:selected").text());
+    if (id){ $("[bind='" + id + "']").html($(this).find("option:selected").text()) }
+  });
+  
+  $('input[type=checkbox]').change(function() {
+    var id = $(this).data('bind');
+    if (id){ 
+      if($(this).is(":checked")) {
+        $("[bind='" + id + "']").html($(this).val());
+      }
+    }
   });
 };
 

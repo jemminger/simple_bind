@@ -7,7 +7,7 @@
 /pkg/
 /spec/reports/
 /tmp/
-
+.DS_Store
 # rspec failure tracking
 .rspec_status
 /spec/dummy/.bundle
@@ -44,7 +44,6 @@
 /spec/dummy/pickle-email-*.html
 /spec/dummy/.zeus.sock
 /spec/dummy/**.orig
-/spec/dummy/.DS_Store
 /spec/dummy/nbproject/
 /spec/dummy/.idea
 /spec/dummy/*.tmproj

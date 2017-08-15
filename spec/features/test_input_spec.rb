@@ -13,4 +13,12 @@ feature 'Test functionality' do
     select_by_value 'select_input', 'second_option'
     expect(find('#span_select_tag')).to have_content 'Second Option'
   end
+
+  it 'Change checkbox', js: true do
+    visit '/'
+    find('#check_box_input').click
+    expect(find('#span_check_box_tag')).to have_content 'yes'
+  end
+
+
 end
