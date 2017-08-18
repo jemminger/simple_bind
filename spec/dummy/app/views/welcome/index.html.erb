@@ -10,5 +10,6 @@
 
 <h1>Checkbox input</h1>
 <% id_check = "CHECK#{Time.now.to_i}" %>
-<p><%= check_box_tag :checkbox, 'yes', false, id: 'check_box_input', data: { bind: id_check } %></p>
-<p><%= content_tag :span, 'Unchecked', bind: id_check, id: 'span_check_box_tag' %></p
+<p><%= check_box_tag :checkbox, 'yes', false, id: 'check_box_input', data: { bind: id_check } %> Input Check Box</p>
+<hr>
+<p><%= check_box_tag :checkbox, 'yes', false, id: 'span_check_box_tag', bind: id_check %> Displayed Check Box</p>
