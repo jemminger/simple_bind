@@ -17,7 +17,7 @@ this.simpleBind = function() {
         return results;
       }
       else {
-        return Array.from(results);
+        return [].slice.call(results);
       }
     }
 
