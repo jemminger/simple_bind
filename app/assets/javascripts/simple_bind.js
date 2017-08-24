@@ -43,7 +43,7 @@ this.simpleBind = function() {
           $("[bind='" + id + "']").forEach(function(el){
             var value = [];
             $('option:checked', sel).forEach(function(opt){
-              value.push(opt.value);
+              value.push(opt.text);
             });
 
             el.innerHTML = value.join(', ');
